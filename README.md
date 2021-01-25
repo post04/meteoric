@@ -3,3 +3,7 @@
 <p align="center">
     <img src="meteoric.gif" alt="animated"/>
 </p>
+
+## Installation
+ - [git](https://git-scm.com/download)
+ - [golang](https://golang.org/dl/)
