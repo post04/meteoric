@@ -1,1 +1,3 @@
-<div style="text-align:center"><img src="meteoric.gif" /></div>
+<p align="center">
+  ![](meteoric.gif)
+</p>
