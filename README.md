@@ -8,4 +8,4 @@
  - [git](https://git-scm.com/download)
  - [golang](https://golang.org/dl/)
  - Once done, open your terminal and run this command:
-   `go get github.com/sadlil/go-trigger && go get github.com/valyala/fasthttp && go get github.com/Jeffail/gabs && go get github.com/gorilla/websocket`
+   ```go get github.com/sadlil/go-trigger && go get github.com/valyala/fasthttp && go get github.com/Jeffail/gabs && go get github.com/gorilla/websocket```
