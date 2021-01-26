@@ -15,3 +15,4 @@
   - Webhook logging.
   - Terminal ascii & color.
   - Make connection to gateway more stable.
+  - Multiple alt account support
