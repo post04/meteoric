@@ -1,0 +1,4 @@
+config:
+  token: "main.token"
+  webhook_url: "" # ignore
+  bot: false # ignore
