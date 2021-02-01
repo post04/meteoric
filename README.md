@@ -10,7 +10,7 @@
   - Once done, open your terminal and run this command: `go get github.com/sadlil/go-trigger && go get github.com/valyala/fasthttp && go get github.com/Jeffail/gabs && go get github.com/gorilla/websocket`, and wait for it to finish.
 
 ## Setting up
-    ```yaml
+```yaml
 config:
   token: "main_token"
   secondary_token: "alt_token"
@@ -25,7 +25,7 @@ config:
     - 123
 
   webhook_url: ""
-    ```
+```
 
 ## Todo
   - Snipe from bot account to user account.
