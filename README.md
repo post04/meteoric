@@ -11,20 +11,20 @@
 
 ## Setting up
     ```yaml
-        config:
-          token: "main_token"
-          secondary_token: "alt_token"
-          bot: false
-          snipe_to_main_token: false
+config:
+  token: "main_token"
+  secondary_token: "alt_token"
+  bot: false
+  snipe_to_main_token: false
 
-          ignore_codes: 
-            - "xxx"
-          ignore_guilds:
-            - 123
-          ignore_users:
-            - 123
+  ignore_codes: 
+    - "xxx"
+  ignore_guilds:
+    - 123
+  ignore_users:
+    - 123
 
-          webhook_url: ""
+  webhook_url: ""
     ```
 
 ## Todo
