@@ -9,22 +9,23 @@
   - [golang](https://golang.org/dl/)
   - Once done, open your terminal and run this command: `go get github.com/sadlil/go-trigger && go get github.com/valyala/fasthttp && go get github.com/Jeffail/gabs && go get github.com/gorilla/websocket`, and wait for it to finish.
 
-```yaml
-config:
-  token: "main_token"
-  secondary_token: "alt_token"
-  bot: false
-  snipe_to_main_token: false
+## Setting up
+    ```yaml
+        config:
+          token: "main_token"
+          secondary_token: "alt_token"
+          bot: false
+          snipe_to_main_token: false
 
-  ignore_codes: 
-    - "xxx"
-  ignore_guilds:
-    - 123
-  ignore_users:
-    - 123
+          ignore_codes: 
+            - "xxx"
+          ignore_guilds:
+            - 123
+          ignore_users:
+            - 123
 
-  webhook_url: ""
-```
+          webhook_url: ""
+    ```
 
 ## Todo
   - Snipe from bot account to user account.
