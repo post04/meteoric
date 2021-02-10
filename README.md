@@ -19,8 +19,8 @@ config:
 
 ## Todo
   - Snipe from bot account to user account.
-  - Webhook logging.
+  - ~Webhook logging.~
   - ~Terminal ascii & color.~
-  - Make connection to gateway more stable.
+  - ~Make connection to gateway more stable.~
   - Multiple alt account support.
-  - Linux support (?)
+  - ~Linux support (?)~
