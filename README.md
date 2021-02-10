@@ -20,7 +20,7 @@ config:
 ## Todo
   - Snipe from bot account to user account.
   - Webhook logging.
-  - Terminal ascii & color.
+  - ~Terminal ascii & color.~
   - Make connection to gateway more stable.
   - Multiple alt account support.
   - Linux support (?)
