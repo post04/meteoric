@@ -4,8 +4,6 @@
     <img src="meteoric.gif" alt="animated"/>
 </p>
 
-_still wip, so if any errors open issue and specify._
-
 ## Showcase
   <details>
     <summary>Sniper showcase</summary>
@@ -68,3 +66,6 @@ generalConfig: {
 - Multiple alt account support.
 - ~Linux support (?)~
 - [href](https://github.com/azaelgg/meteoric/blob/main/discord/gateway.go#L57)
+
+
+_still wip, so if any errors open issue and specify._
