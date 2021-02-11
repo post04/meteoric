@@ -6,6 +6,9 @@
 
 _still wip, so if any errors open issue and specify._
 
+## Showcase
+ ![](https://imgur.com/Lg2TNQh)
+
 ## Installation
 
 - [git](https://git-scm.com/download)
