@@ -11,10 +11,20 @@
 
 ## Setting up
 ```yaml
-config:
-  token: "main_token"
-  bot: false
-  webhook_url: ""
+generalConfig: {
+  token: 'main_token',
+  bot: false,
+  logging: {
+    webhook_url: 'webhook_url',
+    file_name: '/data/meteoric-logs.txt'
+  },
+
+  envConfig: {
+    use_env_file: true,
+    token_value_name: 'TOKEN'
+  }
+}
+
 ```
 
 ## Todo
