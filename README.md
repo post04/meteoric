@@ -35,7 +35,7 @@ generalConfig: {
   }
 }
 ```
-   - fill your config.yaml file
+   - fill your [config.yaml file](https://github.com/azaelgg/meteoric/blob/main/config.yaml)
 
 ## Todo
   - Snipe from bot account to user account.
