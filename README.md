@@ -18,7 +18,7 @@
 
 - [git](https://git-scm.com/download)
 - [golang](https://golang.org/dl/)
-- Head to `install.bat` then `run.bat` or run these commands:
+- Run `install.bat` then `run.bat` or run these commands:
 
 ```
 go get github.com/valyala/fasthttp
