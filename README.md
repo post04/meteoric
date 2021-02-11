@@ -70,5 +70,6 @@ generalConfig: {
 - ~Linux support (?)~
 - [href](https://github.com/azaelgg/meteoric/blob/main/discord/gateway.go#L57)
 
-
-_still wip, so if any errors open issue and specify._
+---
+#### Extra
+  _still wip, so if any errors open issue and specify._
