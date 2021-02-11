@@ -12,6 +12,11 @@
   - Once done, open your terminal and run this command: `go get github.com/valyala/fasthttp && go get github.com/Jeffail/gabs && go get github.com/gorilla/websocket && go get github.com/gookit/color && go get gopkg.in/yaml.v2 && go get gopkg.in/mgo.v2/bson`, and wait for it to finish.
   - `go run .` inside the folder to run the sniper.
 
+## Features 
+  - webhook logging
+  - fast claim time
+  - its own gateway connection to speed things up
+
 ## Setting up
 ```yaml
 # meteoric-sniper config.yaml file
