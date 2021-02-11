@@ -9,7 +9,7 @@
 ## Installation
   - [git](https://git-scm.com/download)
   - [golang](https://golang.org/dl/)
-  - run these commands:
+  - head to `install.bat` then `run.bat` or run these commands:
 ```
 go get github.com/valyala/fasthttp 
 go get github.com/Jeffail/gabs 
@@ -17,7 +17,7 @@ go get github.com/gorilla/websocket
 go get github.com/gookit/color 
 go get gopkg.in/yaml.v2 
 go get gopkg.in/mgo.v2/bson
-``` or head to `install.bat` then `run.bat`
+``` 
 
 ## Features 
   - webhook logging
