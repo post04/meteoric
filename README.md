@@ -4,6 +4,8 @@
     <img src="meteoric.gif" alt="animated"/>
 </p>
 
+still wip.
+
 ## Installation
   - [git](https://git-scm.com/download)
   - [golang](https://golang.org/dl/)
