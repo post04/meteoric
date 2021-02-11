@@ -8,8 +8,9 @@ _still wip, so if any errors open issue and specify._
 
 ## Showcase
   <details>
-    <summary>**Sniper showcase**</summary>
-    ![](https://i.imgur.com/Lg2TNQh.gif)
+    <summary>⚠️ **Epilepsy Warning**</summary>
+
+  ![](https://i.imgur.com/Lg2TNQh.gif)
   </details>
  - credit: riptide
 
