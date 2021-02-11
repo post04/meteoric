@@ -24,7 +24,6 @@ generalConfig: {
     token_value_name: 'TOKEN'
   }
 }
-
 ```
 
 ## Todo
