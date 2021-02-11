@@ -1,4 +1,6 @@
-[![Run on Repl.it](https://repl.it/badge/github/azaelgg/meteoric)](https://repl.it/github/azaelgg/meteoric) [![views](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/azaelgg/meteoric)](https://hits.seeyoufarm.com)
+[![Run on Repl.it](https://repl.it/badge/github/azaelgg/meteoric)](https://repl.it/github/azaelgg/meteoric) 
+[![Run on Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/azaelgg/meteoric/tree/heroku)
+[![Views](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/azaelgg/meteoric)](https://hits.seeyoufarm.com)
 
 <p align="center">
     <img src="meteoric.gif" alt="animated"/>
@@ -10,13 +12,13 @@
 
   ![](https://i.imgur.com/Lg2TNQh.gif)
   </details>
- - credit: riptide
+ - Credits: riptide
 
 ## Installation
 
 - [git](https://git-scm.com/download)
 - [golang](https://golang.org/dl/)
-- head to `install.bat` then `run.bat` or run these commands:
+- Head to `install.bat` then `run.bat` or run these commands:
 
 ```
 go get github.com/valyala/fasthttp
@@ -31,9 +33,9 @@ go get gopkg.in/mgo.v2/bson
 
 ## Features
 
-- webhook logging
-- fast claim time
-- its own gateway connection to speed things up
+- Webhook logging
+- Fast claim time
+- Its own gateway connection to speed things up
 
 ## Setting up
 
