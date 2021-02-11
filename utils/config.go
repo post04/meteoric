@@ -25,13 +25,11 @@ type Config struct {
 // GetConfig loads config.yaml into config struct.
 func GetConfig() *Config {
 	var config *Config
-
 	if yamlf, err := ioutil.ReadFile("config.yaml"); err == nil {
 		err := yaml.Unmarshal(yamlf, &config)
 		if err != nil {
 			return nil
 		}
-
 		return config
 	}
 
