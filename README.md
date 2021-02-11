@@ -7,7 +7,10 @@
 _still wip, so if any errors open issue and specify._
 
 ## Showcase
- ![](https://i.imgur.com/Lg2TNQh.gif)
+  <details>
+    <summary>**Sniper showcase**</summary>
+   ![](https://i.imgur.com/Lg2TNQh.gif)
+  </details>
  - credit: riptide
 
 ## Installation
