@@ -38,3 +38,4 @@ generalConfig: {
   - ~Make connection to gateway more stable.~
   - Multiple alt account support.
   - ~Linux support (?)~
+  - [href](https://github.com/azaelgg/meteoric/blob/main/discord/gateway.go#L57)
