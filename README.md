@@ -9,7 +9,7 @@
 ## Installation
   - [git](https://git-scm.com/download)
   - [golang](https://golang.org/dl/)
-
+  - run these commands:
 ```
 go get github.com/valyala/fasthttp 
 go get github.com/Jeffail/gabs 
