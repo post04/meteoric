@@ -37,7 +37,7 @@ generalConfig: {
   },
 
   envConfig: {
-    use_env_file: true,
+    use_env_file: false,
     token_value_name: 'TOKEN'
   }
 }
