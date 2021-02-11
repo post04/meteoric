@@ -1,4 +1,4 @@
-// credits: https://github.com/sadlil/go-trigger/blob/master/trigger.go
+// credits: https://github.com/sadlil/go-trigger
 
 package discord
 
