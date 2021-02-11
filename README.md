@@ -4,7 +4,7 @@
     <img src="meteoric.gif" alt="animated"/>
 </p>
 
-still wip.
+*still wip, so if any errors open issue and specify.*
 
 ## Installation
   - [git](https://git-scm.com/download)
