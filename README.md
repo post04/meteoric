@@ -29,6 +29,7 @@ generalConfig: {
   }
 }
 ```
+   - fill your config.yaml file
 
 ## Todo
   - Snipe from bot account to user account.
