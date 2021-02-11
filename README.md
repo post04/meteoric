@@ -33,9 +33,10 @@ go get gopkg.in/mgo.v2/bson
 
 ## Features
 
-- Webhook logging
-- Fast claim time
-- Its own gateway connection to speed things up
+- Webhook logging.
+- Fast claim time.
+- Its own gateway connection to speed things up.
+- Anti dupes.
 
 ## Setting up
 
