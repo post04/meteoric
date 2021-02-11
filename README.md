@@ -7,7 +7,8 @@
 _still wip, so if any errors open issue and specify._
 
 ## Showcase
- ![](https://imgur.com/Lg2TNQh)
+ ![](https://i.imgur.com/Lg2TNQh.gif)
+ - credit: riptide
 
 ## Installation
 
