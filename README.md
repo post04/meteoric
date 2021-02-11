@@ -11,6 +11,8 @@
 
 ## Setting up
 ```yaml
+# meteoric-sniper config.yaml file
+
 generalConfig: {
   token: 'main_token',
   bot: false,
