@@ -1,2 +1,2 @@
 language = "go"
-run = "go build && ./meteoric"
+run = "go run ."
