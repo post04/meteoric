@@ -15,9 +15,11 @@ type Config struct {
 			WebhookURL string `yaml:"webhook_url"`
 			FileName   string `yaml:"file_name"`
 		} `yaml:"logging"`
-		EnvConfig struct {
-			UseEnvFile     bool   `yaml:"use_env_file"`
-			TokenValueName string `yaml:"token_value_name"`
+		ClaimToken string `yaml:"claimToken"`
+		EnvConfig  struct {
+			UseEnvFile          bool   `yaml:"use_env_file"`
+			TokenValueName      string `yaml:"token_value_name"`
+			ClaimTokenValueName string `yaml:"claim_token_value_name"`
 		} `yaml:"envConfig"`
 	} `yaml:"generalConfig"`
 }
