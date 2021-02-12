@@ -33,7 +33,6 @@ func onReady(s *discord.Session, r *discord.Ready) {
 }
 
 func onMessage(s *discord.Session, m *discord.MessageCreate) {
-	r := regexp.MustCompile(`(discord|discordapp)(\.gift\/|\.com\/gifts\/)([a-zA-Z0-9]+)`)
 	if r.MatchString(m.Content) {
 		code := r.FindStringSubmatch(m.Content)
 		found := utils.Find(CachedNitro, code[3])
@@ -73,4 +72,5 @@ var (
 	wHook       *discord.Webhook
 	Token       string
 	CachedNitro []string
+	r = regexp.MustCompile(`(discord|discordapp)(\.gift\/|\.com\/gifts\/)([a-zA-Z0-9]+)`)
 )
