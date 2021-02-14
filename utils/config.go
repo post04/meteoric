@@ -9,17 +9,17 @@ import (
 // Config struct ...
 type Config struct {
 	GeneralConfig struct {
-		Token   string `yaml:"token"`
-		Bot     bool   `yaml:"bot"`
-		Logging struct {
+		Token      string `yaml:"token"`
+		Bot        bool   `yaml:"bot"`
+		SnipeToken string `yaml:"snipeToken"`
+		Logging    struct {
 			WebhookURL string `yaml:"webhook_url"`
 			FileName   string `yaml:"file_name"`
 		} `yaml:"logging"`
-		ClaimToken string `yaml:"claimToken"`
-		EnvConfig  struct {
+		EnvConfig struct {
 			UseEnvFile          bool   `yaml:"use_env_file"`
 			TokenValueName      string `yaml:"token_value_name"`
-			ClaimTokenValueName string `yaml:"claim_token_value_name"`
+			SnipeTokenValueName string `yaml:"snipe_token_value_name"`
 		} `yaml:"envConfig"`
 	} `yaml:"generalConfig"`
 }
