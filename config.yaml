@@ -1,9 +1,9 @@
 # meteoric-sniper config.yaml file
 
 generalConfig: {
-  token: 'main_token',         # main token.
+  token: 'get',         # main token.
   bot: false,                  # if the main token is a bot or not.
-  claimToken: "claim_token", # the token nitro will be claimed on.
+  snipeToken: 'get', # token that gets the nitro from the messages sent. This account will be the one actually finding the nitro to apply to the main token.
   logging: {
     webhook_url: '',                     # webhook to log info to, keep it empty to not do any webhook logging.
     file_name: '/data/meteoric-logs.txt' # file logging, coming soon.
@@ -12,6 +12,6 @@ generalConfig: {
   envConfig: {
     use_env_file: false,       # use .env file, if you're using a public host i highly recommend it.
     token_value_name: 'TOKEN',  # key value of the token inside the .env
-    claim_token_value_name: 'CLAIM_TOKEN'
+    snipe_token_value_name: 'SNIPE_TOKEN'
   }
 }
