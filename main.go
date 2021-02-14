@@ -16,23 +16,24 @@ func main() {
 
 	if cfg.GeneralConfig.EnvConfig.UseEnvFile {
 		Token = os.Getenv(cfg.GeneralConfig.EnvConfig.TokenValueName)
-		ClaimToken = os.Getenv(cfg.GeneralConfig.EnvConfig.ClaimTokenValueName)
-		valid := utils.CheckToken(ClaimToken)
-		if !valid {
-			color.Printf("<magenta>%v</> | <red>%v</> isn't a valid token! We will attempt to claim on the main token!\n", time.Now().Format(TimeFormat), ClaimToken)
-			ClaimToken = Token
-		}
+		SnipeToken = os.Getenv(cfg.GeneralConfig.EnvConfig.SnipeTokenValueName)
 	} else {
 		Token = cfg.GeneralConfig.Token
-		ClaimToken = cfg.GeneralConfig.ClaimToken
-		valid := utils.CheckToken(ClaimToken)
-		if !valid {
-			color.Printf("<magenta>%v</> | <red>%v</> isn't a valid token! We will attempt to claim on the main token!\n", time.Now().Format(TimeFormat), ClaimToken)
-			ClaimToken = Token
+		SnipeToken = cfg.GeneralConfig.SnipeToken
+	}
+	if Token == "get" {
+		Token, err = discord.GetToken()
+		if err != nil {
+			color.Printf("<magenta>%v</> | Error getting token! | %v", time.Now().Format(TimeFormat), err)
 		}
 	}
-
-	if sess, err := discord.New(Token, 512); err == nil {
+	if SnipeToken == "get" {
+		SnipeToken, err = discord.GetToken()
+		if err != nil {
+			color.Printf("<magenta>%v</> | Error getting snipe token! | %v", time.Now().Format(TimeFormat), err)
+		}
+	}
+	if sess, err := discord.New(SnipeToken, 512); err == nil {
 		wHook = discord.NewWebhook(cfg.GeneralConfig.Logging.WebhookURL)
 		discord.On("READY", onReady)
 		discord.On("MESSAGE_CREATE", onMessage)
@@ -41,7 +42,7 @@ func main() {
 }
 
 func onReady(s *discord.Session, r *discord.Ready) {
-	color.Printf("<magenta>%v</> | Logged in as %v#%v | Guilds: %v\n", time.Now().Format(TimeFormat), s.State.User.Username, s.State.User.Discriminator, len(s.Guilds()))
+	color.Printf("<magenta>%v</> | Logged in as %v#%v\n | Guilds: %v\n", time.Now().Format(TimeFormat), s.State.User.Username, s.State.User.Discriminator, len(s.Guilds()))
 }
 
 func onMessage(s *discord.Session, m *discord.MessageCreate) {
@@ -50,7 +51,7 @@ func onMessage(s *discord.Session, m *discord.MessageCreate) {
 		found := utils.Find(CachedNitro, code[3])
 		if !found && len(code[3]) >= 16 && len(code[3]) <= 24 {
 			now := time.Now()
-			if nresp, err := s.ClaimCode(code[3], m.ChannelID, ClaimToken); err == nil {
+			if nresp, err := s.ClaimCode(code[3], m.ChannelID, Token); err == nil {
 				elapsed := time.Since(now).String()
 
 				var authorUsername = m.Author.Username + "#" + m.Author.Discriminator
@@ -83,7 +84,8 @@ var (
 	TimeFormat  = "15:04:05 — 01/02-06"
 	wHook       *discord.Webhook
 	Token       string
-	ClaimToken  string
+	SnipeToken  string
 	CachedNitro []string
+	err         error
 	r           = regexp.MustCompile(`(discord|discordapp)(\.gift\/|\.com\/gifts\/)([a-zA-Z0-9]+)`)
 )
